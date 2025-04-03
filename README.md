@@ -30,11 +30,33 @@ Three recommendation strategies are compared:
 
 We also test how different **network structures** (e.g. fully connected vs. modular networks) influence the speed and pattern of polarization.
 
-## 🔍 Key Findings
+## 📊 Simulation Results
 
-- **Self-reinforcing algorithms** rapidly push agents toward extreme positions, leading to ideological isolation and fragmented networks.
-- **Network-based recommendations** preserve neutrality longer, but only if **learning rate** is low (i.e. people aren't too easily swayed).
-- **Fair recommendation** avoids early polarization, but still leads to network fragmentation under high learning rates.
+### 🟥 Self-Reinforcing (Preference-Based)
+
+<img src="plots/Self-reinforcing.png" width="800"/>  
+*Agents gradually shift toward extreme positions. Network fragmentation occurs as ideological distances grow.*
+
+---
+
+### 🟦 Network-Based Recommendation
+
+<img src="plots/network.png" width="800"/>  
+*Most agents maintain neutral positions. Network remains largely connected under low learning rate.*
+
+<img src="plots/network_high_alpha.png" width="800"/>  
+*Higher learning rate leads to rapid polarization and formation of small extremist clusters.*
+
+---
+
+### 🟩 Fair Recommendation
+
+<img src="plots/fair.png" width="800"/>  
+*Balanced exposure keeps agents ideologically neutral and socially connected.*
+
+<img src="plots/fair_high_alpha.png" width="800"/>  
+*Even with fair recommendations, high learning rates cause rapid disconnection and fragmentation.*
+
 
 ## 💻 Environment
 
