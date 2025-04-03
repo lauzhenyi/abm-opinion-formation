@@ -19,7 +19,7 @@ We model users as **agents** embedded in a social network, updating their ideolo
 - **Agents** hold probabilistic preferences over competing ideologies.
 - Each round (tick), agents receive information based on a chosen **recommendation strategy**, and update their preferences accordingly.
 - Agents disconnect from those with opposing views when ideological distance becomes too great.
-- **Key variables**: learning rate (α), recommendation method, and network structure.
+- **Key variables**: learning rate (α, the extent to which an agent changes their ideological preference in response to incoming information), recommendation method, and network structure.
 
 ## 📊 Simulation Modes
 
